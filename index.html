@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors | Premium Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="game-wrapper">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <div class="score-board">
+                <div class="score-card user">
+                    <span class="score-label">YOU</span>
+                    <p id="user-score">0</p>
+                </div>
+                <div class="score-card comp">
+                    <span class="score-label">COMP</span>
+                    <p id="comp-score">0</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="choices">
+            <div class="choice" id="rock">
+                <div class="img-wrapper">
+                    <img src="./images/rock.png" alt="Rock" />
+                </div>
+                <span class="choice-label">Rock</span>
+            </div>
+            <div class="choice" id="paper">
+                <div class="img-wrapper">
+                    <img src="./images/paper.png" alt="Paper" />
+                </div>
+                <span class="choice-label">Paper</span>
+            </div>
+            <div class="choice" id="scissors">
+                <div class="img-wrapper">
+                    <img src="./images/scissors.png" alt="Scissors" />
+                </div>
+                <span class="choice-label">Scissors</span>
+            </div>
+        </main>
+
+        <footer class="msg-container">
+            <div id="msg-box">
+                <p id="msg">Pick your move to start!</p>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
